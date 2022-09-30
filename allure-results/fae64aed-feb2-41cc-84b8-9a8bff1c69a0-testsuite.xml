@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664119957999' stop='1664119963267'>
+    <name>Home Page Test Suite</name>
+    <title>Home Page Test Suite</title>
+    <test-cases>
+        <test-case start='1664119957999' status='failed' stop='1664119963266'>
+            <name>Verify Home Page Title</name>
+            <title>Verify Home Page Title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.127'/>
+            </parameters>
+            <steps>
+                <step start='1664119958001' status='passed' stop='1664119960551'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5cf3d036-f53f-4067-8786-a2052aab6d5d-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664119963020' status='passed' stop='1664119963264'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1420ac42-7c0d-4954-9a62-9ef2b72e2fbd-attachment.png' type='image/png' size='706644'/>
+                    </attachments>
+                    <steps>
+                        <step start='1664119963024' status='passed' stop='1664119963035'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='4a539f02-4a26-45aa-81e6-076833bb0e44-attachment.json' type='application/json' size='56'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Electronics, Cars, Fashion, Collectibles &amp; More | eBay"
+                Received: {}</message>
+                <stack-trace>Error: expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Electronics, Cars, Fashion, Collectibles &amp; More | eBay"
+                Received: {}
+                    at HomePage.verifyHomePageTitle (C:\Sample projects\webdriverIoDemo1\test\pageobjects\homePage.ts:17:33)
+                    at async Context.&lt;anonymous> (C:\Sample projects\webdriverIoDemo1\test\specs\home.e2e.ts:12:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
